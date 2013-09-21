@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:BenchBuddy
 LIBS:BenchBuddy-cache
 EELAYER 27 0
 EELAYER END
@@ -36,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 8
 Title ""
-Date "20 sep 2013"
+Date "21 sep 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -71,16 +72,6 @@ F4 "MOSI" I L 8250 4550 60
 F5 "MISO" O L 8250 4750 60 
 F6 "SCLK" I L 8250 4950 60 
 F7 "CS_N" I L 8250 5150 60 
-$EndSheet
-$Sheet
-S 8250 5700 1500 1150
-U 5237E13C
-F0 "Relay" 50
-F1 "Relay.sch" 50
-F2 "DIN+" I L 8250 6050 60 
-F3 "DIN-" O L 8250 6200 60 
-F4 "Relay+" I R 9750 6050 60 
-F5 "Relay-" O R 9750 6200 60 
 $EndSheet
 $Sheet
 S 3000 1100 2200 1550
@@ -119,5 +110,16 @@ S 10250 1450 500  5300
 U 5237E269
 F0 "TerminalBlock" 50
 F1 "TerminalBlock.sch" 50
+$EndSheet
+$Sheet
+S 8250 5700 1500 1150
+U 5237E13C
+F0 "Relay" 50
+F1 "Relay.sch" 50
+F2 "DIN+" I L 8250 6050 60 
+F3 "DIN-" O L 8250 6200 60 
+F6 "NC" B R 9750 6050 60 
+F7 "NO" B R 9750 6200 60 
+F8 "C" B R 9750 6350 60 
 $EndSheet
 $EndSCHEMATC
