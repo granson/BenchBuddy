@@ -35,9 +35,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 5 9
 Title ""
-Date "22 sep 2013"
+Date "28 sep 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -46,15 +46,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 2550 2950 0    60   Input ~ 0
-Fan_In
+FAN_EN_N
 Text HLabel 2550 3200 0    60   Output ~ 0
-Tach_Out
+TACH_MEAS
 Text HLabel 8950 2450 0    60   Output ~ 0
-Power+
-Text HLabel 8950 2650 0    60   Input ~ 0
-Power-
+FAN_OUT+
+Text HLabel 8950 2650 0    60   Output ~ 0
+FAN_OUT-
 Text HLabel 8950 2850 0    60   Input ~ 0
-Tach
+TACH_IN
 $Comp
 L LM324 U?
 U 1 1 523BC5AD
@@ -97,7 +97,9 @@ Wire Wire Line
 Wire Wire Line
 	8950 2650 7600 2650
 Wire Wire Line
-	7600 2650 7600 3300
+	7600 2650 7600 3200
+Wire Wire Line
+	7600 3200 7600 3300
 $Comp
 L R R?
 U 1 1 523BC667
@@ -147,7 +149,9 @@ $EndComp
 Wire Wire Line
 	5950 2850 5950 2550
 Wire Wire Line
-	3500 3200 7600 3200
+	3500 3200 5350 3200
+Wire Wire Line
+	5350 3200 7600 3200
 Wire Wire Line
 	5350 3200 5350 2250
 Wire Wire Line
@@ -156,7 +160,9 @@ Connection ~ 7600 3200
 Wire Wire Line
 	7600 1950 7600 1550
 Wire Wire Line
-	4200 2050 5550 2050
+	4250 2050 4700 2050
+Wire Wire Line
+	4700 2050 5550 2050
 $Comp
 L +12V #PWR?
 U 1 1 523BC77F
@@ -182,7 +188,11 @@ $EndComp
 Wire Wire Line
 	4250 1500 4250 1250
 Wire Wire Line
-	4250 2000 4250 2300
+	4250 2000 4250 2050
+Wire Wire Line
+	4250 2050 4250 2150
+Wire Wire Line
+	4250 2150 4250 2300
 $Comp
 L POT RV?
 U 1 1 523BC7D3
@@ -229,15 +239,17 @@ Wire Wire Line
 	3150 4200 3150 3200
 Wire Wire Line
 	3150 3200 2550 3200
-Text HLabel 2850 3100 0    60   Output ~ 0
-Current Measure
+Text HLabel 2600 3100 0    60   Output ~ 0
+CURR_MEAS
 Wire Wire Line
 	3500 3200 3500 3100
 Wire Wire Line
-	3500 3100 2850 3100
+	3500 3100 2600 3100
 Connection ~ 5350 3200
 Wire Wire Line
-	2550 2950 3600 2950
+	2550 2950 2850 2950
+Wire Wire Line
+	2850 2950 3600 2950
 Wire Wire Line
 	3600 2950 3600 3150
 Wire Wire Line
@@ -261,16 +273,16 @@ Wire Wire Line
 $Comp
 L R R?
 U 1 1 523BCB9D
-P 3950 2050
-F 0 "R?" V 4030 2050 40  0000 C CNN
-F 1 "R" V 3957 2051 40  0000 C CNN
-F 2 "~" V 3880 2050 30  0000 C CNN
-F 3 "~" H 3950 2050 30  0000 C CNN
-	1    3950 2050
+P 3900 2100
+F 0 "R?" V 3980 2100 40  0000 C CNN
+F 1 "R" V 3907 2101 40  0000 C CNN
+F 2 "~" V 3830 2100 30  0000 C CNN
+F 3 "~" H 3900 2100 30  0000 C CNN
+	1    3900 2100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3650 2050 3700 2050
+	3650 2050 3650 2100
 Text HLabel 2200 2000 0    60   Input ~ 0
 MOSI
 Text HLabel 1850 2600 0    60   Output ~ 0
@@ -305,4 +317,9 @@ Wire Wire Line
 Wire Wire Line
 	2850 2750 2850 2950
 Connection ~ 2850 2950
+Wire Wire Line
+	4150 2150 4250 2150
+Wire Wire Line
+	4150 2150 4150 2100
+Connection ~ 4250 2150
 $EndSCHEMATC
