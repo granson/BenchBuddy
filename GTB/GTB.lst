@@ -1,0 +1,22 @@
+eeschema (2013-05-31 BZR 4019)-stable  >> Creation date: 10/9/2013 11:35:34 PM
+#Cmp ( order = Reference )
+| BT1        CR2032      ;             ;             ;             ;             ;             ;             ;             ;             
+| C1         1U          ;             ;             ;             ;             ;             ;             ;             ;             
+| D1         LED         ;             ;             ;             ;             ;             ;             ;             ;             
+| R1         470K        ;             ;             ;             ;             ;             ;             ;             ;             
+| R2         1k          ;             ;             ;             ;             ;             ;             ;             ;             
+| U1         7555        ;             ;             ;             ;             ;             ;             ;             ;             
+| VR1        LDR         ;             ;             ;             ;             ;             ;             ;             ;             
+#End Cmp
+
+#Cmp ( order = Value )
+| CR2032       BT1       ;             ;             ;             ;             ;             ;             ;             ;             
+| 1U           C1        ;             ;             ;             ;             ;             ;             ;             ;             
+| LED          D1        ;             ;             ;             ;             ;             ;             ;             ;             
+| 1k           R2        ;             ;             ;             ;             ;             ;             ;             ;             
+| 470K         R1        ;             ;             ;             ;             ;             ;             ;             ;             
+| 7555         U1        ;             ;             ;             ;             ;             ;             ;             ;             
+| LDR          VR1       ;             ;             ;             ;             ;             ;             ;             ;             
+#End Cmp
+
+#End List
