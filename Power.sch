@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title ""
-Date "15 oct 2013"
+Date "17 oct 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -50,7 +50,7 @@ L CONN_12X2 P1
 U 1 1 523E6A2F
 P 1950 2100
 F 0 "P1" H 1950 2750 60  0000 C CNN
-F 1 "CONN_12X2" V 1950 2100 50  0000 C CNN
+F 1 "24 Pin MiniFit JR" V 1950 2100 50  0000 C CNN
 F 2 "" H 1950 2100 60  0000 C CNN
 F 3 "" H 1950 2100 60  0000 C CNN
 	1    1950 2100
