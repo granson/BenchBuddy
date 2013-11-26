@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 9
 Title ""
-Date "27 oct 2013"
+Date "9 nov 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -792,7 +792,6 @@ Wire Wire Line
 	5100 3350 4850 3350
 Wire Wire Line
 	5500 5350 5500 4850
-Connection ~ 5300 5350
 Wire Wire Line
 	5500 4450 5500 4000
 Connection ~ 5300 4000
