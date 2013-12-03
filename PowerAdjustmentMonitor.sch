@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 9
 Title ""
-Date "2 dec 2013"
+Date "3 dec 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -864,7 +864,7 @@ F 1 "MMBD914-7-F" H 4500 5600 40  0000 C CNN
 F 2 "~" H 4500 5700 60  0000 C CNN
 F 3 "~" H 4500 5700 60  0000 C CNN
 	1    4500 5700
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L DIODE D12
@@ -875,7 +875,7 @@ F 1 "MMBD914-7-F" H 4750 6950 40  0000 C CNN
 F 2 "~" H 4750 7050 60  0000 C CNN
 F 3 "~" H 4750 7050 60  0000 C CNN
 	1    4750 7050
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4300 5700 3950 5700
